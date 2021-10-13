@@ -1,0 +1,32 @@
+html {
+	background-color: rgb(85, 160, 255);
+}
+
+@keyframes windowFade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.mainFrame {
+	text-align: center;
+	height: 100px;
+	width: 300px;
+	margin:400px auto;
+	background-color: rgb(85, 160, 255);
+	animation: windowFade 2s ease 0s infinite normal forwards;
+}
+
+.mainFrame, h1{
+	color: white;
+}
+
+@media screen and (min-height: 400px) {
+	.mainFrame {
+		margin:300px auto;
+	}
+}
